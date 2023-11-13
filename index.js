@@ -1,6 +1,6 @@
-import { launchBrowser, closeBrowser } from './puppeteer.js';
-import { scrapeData } from './scraper.js';
-import { writeToExcel } from './excel.js';
+import { launchBrowser, closeBrowser } from './scripts/puppeteer.js';
+import { scrapeData } from './scripts/scraper.js';
+import { writeToExcel } from './scripts/excel.js';
 
 (async () => {
     const browser = await launchBrowser();
