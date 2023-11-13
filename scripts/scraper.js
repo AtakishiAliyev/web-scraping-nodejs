@@ -3,7 +3,7 @@ import { getNewPage } from './puppeteer.js';
 export async function scrapeData(browser) {
     const data = [];
 
-    for (let page_num = 1; page_num <= 10; page_num++) {
+    for (let page_num = 1; page_num <= 5; page_num++) {
         const page = await getNewPage(browser);
         await page.goto(`https://www.azleks.az/online-dictionary/?s=4&page=${page_num}`);
 
